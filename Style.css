@@ -1,6 +1,6 @@
 /* Estilo para el cuerpo de la página */
 body {
-    min-height: 100vh;
+    min-height: 30vh;
     background: url('1.png') no-repeat center center fixed; /* Establecer la imagen de fondo */
     background-size: cover;
     margin: 0; /* Eliminar los márgenes predeterminados */
