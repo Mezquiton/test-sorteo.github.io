@@ -152,7 +152,7 @@ h1 {
     }
 
     .top-left {
-        top: 560px;
+        top: 600px;
         left: -10px;
         max-width: 50%; /* Tamaño máximo del ancho */
         max-height: 50%; /* Tamaño máximo del alto */
@@ -168,7 +168,7 @@ h1 {
 
     .top-right {
         position: absolute;
-        top: 548px;
+        top: 600px;
         right: 15px;
         max-width: 60%;
         max-height: 60%;
