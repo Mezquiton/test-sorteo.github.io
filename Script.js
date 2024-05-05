@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     gridItems.forEach(gridItem => {
         const index = gridItem.dataset.index;
-        const isSelected = localStorage.getItem(`gridItem-${index}`);
+        const isSelected = getCookie(`gridItem-${index}`);
         if (isSelected === 'selected') {
             gridItem.classList.add('selected');
             gridItem.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
@@ -32,23 +32,42 @@ document.addEventListener("DOMContentLoaded", function() {
             if (unlocked) {
                 if (gridItem.classList.contains('selected')) {
                     gridItem.classList.remove('selected');
-                    localStorage.removeItem(`gridItem-${index}`);
+                    setCookie(`gridItem-${index}`, '', -1); // Elimina la cookie
                     gridItem.style.backgroundColor = '';
                     gridItem.style.color = '';
                 } else {
                     gridItem.classList.add('selected');
-                    localStorage.setItem(`gridItem-${index}`, 'selected');
+                    setCookie(`gridItem-${index}`, 'selected', 365); // Establece la cookie por un año
                     gridItem.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
                     gridItem.style.color = '#fff';
                 }
             } else {
                 if (!gridItem.classList.contains('selected')) {
                     gridItem.classList.add('selected');
-                    localStorage.setItem(`gridItem-${index}`, 'selected');
+                    setCookie(`gridItem-${index}`, 'selected', 365); // Establece la cookie por un año
                     gridItem.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
                     gridItem.style.color = '#fff';
                 }
             }
         });
     });
+
+    // Función para establecer una cookie
+    function setCookie(name, value, days) {
+        const expires = new Date();
+        expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+        document.cookie = name + '=' + value + ';expires=' + expires.toUTCString();
+    }
+
+    // Función para obtener el valor de una cookie
+    function getCookie(name) {
+        const cookieArr = document.cookie.split(';');
+        for (let i = 0; i < cookieArr.length; i++) {
+            let cookiePair = cookieArr[i].split('=');
+            if (name === cookiePair[0].trim()) {
+                return decodeURIComponent(cookiePair[1]);
+            }
+        }
+        return null;
+    }
 });
