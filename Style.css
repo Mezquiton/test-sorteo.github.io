@@ -7,29 +7,11 @@ body {
     padding: 0; /* Eliminar los rellenos predeterminados */
 }
 
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50; /* Color de fondo */
-    color: white; /* Color del texto */
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: #45a049; /* Cambia el color de fondo al pasar el ratón por encima */
-}
-
-.button:active {
-    background-color: #3e8e41; /* Cambia el color de fondo cuando se hace clic */
-}
-
-
 /* Estilo para el contenedor principal */
 .grid-container {
+    position: absolute;
+    top: 200px;
+    right: 510px;
     display: grid;
     grid-template-columns: repeat(10, 1fr); /* 10 columnas */
     grid-template-rows: repeat(10, 1fr); /* 10 filas */
@@ -52,7 +34,10 @@ body {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer; /* Cambiar el cursor a una mano al pasar por encima */
+    color: black; /* Establecer el color del texto en negro */
+    text-decoration: none; /* Eliminar la decoración de subrayado */
 }
+
 
 /* Estilo para las casillas seleccionadas */
 .grid-item.selected {
@@ -62,13 +47,16 @@ body {
 
 /* Estilo para el contenedor del logo */
 .logo-container {
+    position: absolute;
+    top: 0px;
+    right: 1390px;
     margin-right: 20px; /* Espacio entre el logo y el título */
 }
 
 /* Estilo para el logo */
 .logo {
-    width: 200px; /* Tamaño del logo */
-    height: 200px; /* Tamaño del logo */
+    width: 115px; /* Tamaño del logo */
+    height: 115px; /* Tamaño del logo */
 }
 
 /* Estilo para el título */
@@ -79,6 +67,7 @@ h1 {
     font-family: 'Garamond', serif; /* Establecer la fuente como Garamond */
     font-size: 24px; /* Tamaño del texto */
 }
+
 
 /* Estilo para la posición de las imágenes */
 .top-left,
@@ -120,6 +109,7 @@ h1 {
     max-height: 30%; /* Tamaño máximo del alto */
 }
 
+
 /* Media query para pantallas pequeñas (como celulares) */
 @media only screen and (max-width: 767px) {
     /* Estilo para el contenedor principal en dispositivos móviles */
@@ -127,19 +117,18 @@ h1 {
         width: 100%;
         grid-template-rows: repeat(100, 1fr); /* 100 filas */
         padding: 0px; /* Ajustar el espacio entre las casillas */
-        
     }
 
-/* Estilo para el contenedor del logo */
-.logo-container {
-    margin-right: 20px; /* Espacio entre el logo y el título */
-}
+    /* Estilo para el contenedor del logo */
+    .logo-container {
+        margin-right: 20px; /* Espacio entre el logo y el título */
+    }
 
-/* Estilo para el logo */
-.logo {
-    width: 100px; /* Tamaño del logo */
-    height: 100px; /* Tamaño del logo */
-}
+    /* Estilo para el logo */
+    .logo {
+        width: 100px; /* Tamaño del logo */
+        height: 100px; /* Tamaño del logo */
+    }
 
     /* Estilo para la posición de las imágenes en dispositivos móviles */
     .top-left,
@@ -182,6 +171,34 @@ h1 {
     }
 }
 
+/* Estilos para el área de desbloqueo */
+.unlock-container {
+    position: fixed;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Color de fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#unlock-input {
+    margin-bottom: 10px;
+}
+
+#unlock-button {
+    margin-bottom: 10px;
+}
+
+#unlock-error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+
+
 .button-container {
     position: absolute; /* Establece la posición absoluta para que pueda moverse libremente */
     top: 100px; /* Ajusta la distancia desde la parte superior */
@@ -208,3 +225,4 @@ h1 {
 .button:active {
     background-color: #ff9500; /* Cambia el color de fondo cuando se hace clic */
 }
+
