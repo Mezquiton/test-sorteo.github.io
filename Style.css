@@ -117,59 +117,60 @@ h1 {
         width: 100%;
         grid-template-rows: repeat(100, 1fr); /* 100 filas */
         padding: 0px; /* Ajustar el espacio entre las casillas */
+        
     }
+}
+/* Estilo para el contenedor del logo */
+.logo-container {
+    margin-right: 0px; /* Espacio entre el logo y el título */
+}
 
-    /* Estilo para el contenedor del logo */
-    .logo-container {
-        margin-right: 20px; /* Espacio entre el logo y el título */
-    }
-
-    /* Estilo para el logo */
-    .logo {
-        width: 100px; /* Tamaño del logo */
-        height: 100px; /* Tamaño del logo */
-    }
+/* Estilo para el logo */
+.logo {
+    width: 20px; /* Tamaño del logo */
+    height: 20px; /* Tamaño del logo */
+}
 
     /* Estilo para la posición de las imágenes en dispositivos móviles */
     .top-left,
     .top-center,
     .top-right,
     .bottom-right {
-        position: absolute;
+     
         max-width: 50%; /* Tamaño máximo del ancho */
         max-height: 50%; /* Tamaño máximo del alto */
     }
 
     .top-left {
-        top: 600px;
+        top: 650px;
         left: -10px;
+        max-width: 30%; /* Tamaño máximo del ancho */
+        max-height: 30%; /* Tamaño máximo del alto */
+    }
+
+    .top-center {
+        top: -50px;
+        left: 450px;
+        transform: translateX(-50%);
         max-width: 50%; /* Tamaño máximo del ancho */
         max-height: 50%; /* Tamaño máximo del alto */
     }
 
-    .top-center {
-        top: -30px;
-        left: 65%;
-        transform: translateX(-50%);
-        max-width: 80%; /* Tamaño máximo del ancho */
-        max-height: 80%; /* Tamaño máximo del alto */
-    }
-
     .top-right {
         position: absolute;
-        top: 600px;
-        right: 15px;
-        max-width: 60%;
-        max-height: 60%;
+        top: 0px;
+        right: 750px;
+        max-width: 25%;
+        max-height: 25%;
     }
 
     .bottom-right {
-        bottom: -60px;
-        right: -70px;
-        max-width: 30%; /* Tamaño máximo del ancho */
-        max-height: 30%; /* Tamaño máximo del alto */
+        bottom: 350px;
+        right: 200px;
+        max-width: 20%; /* Tamaño máximo del ancho */
+        max-height: 20%; /* Tamaño máximo del alto */
     }
-}
+
 
 /* Estilos para el área de desbloqueo */
 .unlock-container {
@@ -201,8 +202,8 @@ h1 {
 
 .button-container {
     position: absolute; /* Establece la posición absoluta para que pueda moverse libremente */
-    top: 100px; /* Ajusta la distancia desde la parte superior */
-    left: 20px; /* Ajusta la distancia desde la izquierda */
+    top: 155px; /* Ajusta la distancia desde la parte superior */
+    left: 540px; /* Ajusta la distancia desde la izquierda */
     transition: all 0.3s ease; /* Agrega una transición suave para el movimiento */
 }
 
@@ -225,3 +226,18 @@ h1 {
 .button:active {
     background-color: #ff9500; /* Cambia el color de fondo cuando se hace clic */
 }
+
+.grid-container {
+    position: absolute;
+    top: 200px;
+    right: 300px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 columnas */
+    grid-template-rows: repeat(10, 1fr); /* 10 filas */
+    gap: 5px; /* Espacio entre las casillas */
+    padding: 10px;
+    width: 500px; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    background-color: rgba(255, 255, 255, 0.7); /* Color de fondo semi-transparente del contenedor */
+}
+
