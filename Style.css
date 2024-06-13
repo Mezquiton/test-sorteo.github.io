@@ -149,7 +149,7 @@ h1 {
     }
 
     .top-center {
-        top: -100px;
+        top: 0px;
         left: 350px;
         transform: translateX(-50%);
         max-width: 100%; /* Tamaño máximo del ancho */
