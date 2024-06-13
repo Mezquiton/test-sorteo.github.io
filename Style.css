@@ -165,7 +165,7 @@ h1 {
     }
 
     .bottom-right {
-        bottom: 100px;
+        bottom: 200px;
         right: 200px;
         max-width: 20%; /* Tamaño máximo del ancho */
         max-height: 20%; /* Tamaño máximo del alto */
