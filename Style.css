@@ -230,7 +230,7 @@ h1 {
 .grid-container {
     position: absolute;
     top: 200px;
-    right: 300px;
+    right: 100px;
     display: grid;
     grid-template-columns: repeat(10, 1fr); /* 10 columnas */
     grid-template-rows: repeat(10, 1fr); /* 10 filas */
