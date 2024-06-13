@@ -152,8 +152,8 @@ h1 {
         top: -50px;
         left: 330px;
         transform: translateX(-50%);
-        max-width: 50%; /* Tamaño máximo del ancho */
-        max-height: 50%; /* Tamaño máximo del alto */
+        max-width: 100%; /* Tamaño máximo del ancho */
+        max-height: 100%; /* Tamaño máximo del alto */
     }
 
     .top-right {
