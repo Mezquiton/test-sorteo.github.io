@@ -150,7 +150,7 @@ h1 {
 
     .top-center {
         top: -50px;
-        left: 450px;
+        left: 330px;
         transform: translateX(-50%);
         max-width: 50%; /* Tamaño máximo del ancho */
         max-height: 50%; /* Tamaño máximo del alto */
@@ -202,7 +202,7 @@ h1 {
 
 .button-container {
     position: absolute; /* Establece la posición absoluta para que pueda moverse libremente */
-    top: 155px; /* Ajusta la distancia desde la parte superior */
+    top: 125px; /* Ajusta la distancia desde la parte superior */
     left: 540px; /* Ajusta la distancia desde la izquierda */
     transition: all 0.3s ease; /* Agrega una transición suave para el movimiento */
 }
