@@ -119,7 +119,7 @@ h1 {
         padding: 0px; /* Ajustar el espacio entre las casillas */
         
     }
-}
+
 /* Estilo para el contenedor del logo */
 .logo-container {
     margin-right: 0px; /* Espacio entre el logo y el título */
@@ -230,7 +230,7 @@ h1 {
 .grid-container {
     position: absolute;
     top: 200px;
-    right: 400px;
+    right: 100px;
     display: grid;
     grid-template-columns: repeat(10, 1fr); /* 10 columnas */
     grid-template-rows: repeat(10, 1fr); /* 10 filas */
@@ -241,3 +241,4 @@ h1 {
     background-color: rgba(255, 255, 255, 0.7); /* Color de fondo semi-transparente del contenedor */
 }
 
+}
