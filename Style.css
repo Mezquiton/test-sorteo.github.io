@@ -164,6 +164,39 @@ h1 {
         max-height: 25%;
     }
 
+        .top-1 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        max-width: 20%;
+        max-height: 20%;
+    }
+
+    .top-2 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        max-width: 20%;
+        max-height: 20%;
+    }
+
+    .top-3 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        max-width: 20%;
+        max-height: 20%;
+    }
+
+    .top-4 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        max-width: 20%;
+        max-height: 20%;
+    }
+
+    
     .bottom-right {
         bottom: 200px;
         right: 200px;
